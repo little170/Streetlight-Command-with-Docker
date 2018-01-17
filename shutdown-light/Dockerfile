@@ -2,6 +2,6 @@ FROM python:3
 
 ADD shutdown-light.py /
 
-RUN pip3 install serial
+RUN pip install pyserial
 
 CMD ["python3","./shutdown-light.py"]
